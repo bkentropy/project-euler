@@ -1,0 +1,10 @@
+numbers = (1..999) 
+numsToSum = []
+
+numbers.each do |x|
+  if(x % 3 == 0 || x % 5 == 0)
+    numsToSum.push(x)
+  end
+end
+
+sum = numsToSum.sum
